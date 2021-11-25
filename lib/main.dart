@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:full_login_page/modules/login/DesktopLogin.dart';
-import 'package:full_login_page/modules/login/PhoneLogin.dart';
-import 'package:full_login_page/observer.dart';
+import 'package:full_login_page/modules/login/phone.dart';
+import 'package:full_login_page/modules/login/desktop.dart';
+import 'package:full_login_page/shared/observer.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,13 +21,13 @@ class MyApp extends StatelessWidget {
                 data: MediaQuery.of(context).copyWith(
                   textScaleFactor: 0.75,
                 ),
-                child: DeskLogin());
+                child: PhoneLogin());
           } else {
             return MediaQuery(
                 data: MediaQuery.of(context).copyWith(
                   textScaleFactor: 1.25,
                 ),
-                child: PhoneLogin());
+                child: DeskLogin());
           }
         }));
   }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:full_login_page/Register.dart';
+import 'package:full_login_page/modules/register/Register.dart';
 import 'package:full_login_page/shared/component/component.dart';
 import 'package:full_login_page/shared/cubit/cubit.dart';
 import 'package:full_login_page/shared/cubit/state.dart';
 
-class DeskLogin extends StatelessWidget {
+class PhoneLogin extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
   final emailControl = TextEditingController();
   final passControl = TextEditingController();
