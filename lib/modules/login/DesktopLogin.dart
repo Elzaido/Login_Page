@@ -21,13 +21,16 @@ class DeskLogin extends StatelessWidget {
             return Scaffold(
                 body: Column(
               children: [
-                Expanded(
-                  child: Container(
-                    color: Colors.teal,
-                  ),
+                // Expanded(
+                //   child: Container(
+                //     color: Colors.teal,
+                //   ),
+                // ),
+                SizedBox(
+                  height: 30,
                 ),
                 Expanded(
-                  flex: 2,
+                  //flex: 2,
                   child: Container(
                     child: Center(
                       child: SingleChildScrollView(
