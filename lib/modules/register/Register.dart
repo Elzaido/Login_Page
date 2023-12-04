@@ -1,10 +1,10 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:full_login_page/shared/component/component.dart';
 import 'package:full_login_page/shared/cubit2/cubit2.dart';
 import 'package:full_login_page/shared/cubit2/state2.dart';
 
+// ignore: must_be_immutable
 class Register extends StatelessWidget {
   var formKey = GlobalKey<FormState>();
   final nameControl = TextEditingController();

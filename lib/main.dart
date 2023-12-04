@@ -19,13 +19,13 @@ class MyApp extends StatelessWidget {
           if (MediaQuery.of(context).size.width <= 560) {
             return MediaQuery(
                 data: MediaQuery.of(context).copyWith(
-                  textScaleFactor: 0.75,
+                  textScaler: TextScaler.linear(0.75),
                 ),
                 child: PhoneLogin());
           } else {
             return MediaQuery(
                 data: MediaQuery.of(context).copyWith(
-                  textScaleFactor: 1.25,
+                  textScaler: TextScaler.linear(1.25),
                 ),
                 child: DeskLogin());
           }

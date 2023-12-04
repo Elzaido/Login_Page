@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:full_login_page/modules/register/Register.dart';
@@ -272,7 +274,7 @@ class DeskLogin extends StatelessWidget {
                                         ))
                                   ],
                                 ),
-                                // this for Applying adaptive feature for the app :
+                                //this for Applying adaptive feature for the app :
                                 // Center(
                                 //   child: AdaptiveEndicator(
                                 //     os: getOs(),
